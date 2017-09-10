@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="Hexo Blog"/>
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Clutch"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="http://yoursite.com"/>
+  
+    <link rel="alternate" href="/atom.xml" title="Clutch" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>Clutch</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="/css/style.dark.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/bridge.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">Hexo Blog</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  Home
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  
+                  Archives
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/clutchyu">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2017-09-10</span>
+            <span class="time">19:56:02</span>
+          </span>
+          
+          <!--  Categories  -->
+            <span class="categories info">Under 
+
+<a href="/categories/计算机/">计算机</a>
+</span>
+          
+        </div>
+        <!-- Tags -->
+        
+          <div class="post-tags text-muted">
+            Tags: 
+
+<a class="tag" href="/tags/Blog/">#Blog</a>
+
+
+          </div>
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <p>教你如何用 Github+Hexo 搭一个博客<br><a id="more"></a>  </p>
+<p>在搭建博客之前，我们需要做一些准备工作，了解 Git, Github , Github Pages, Hexo 和 Node.js。通俗地说，我们就是用这5样加上一些命令搭成了我们的博客。</p>
+<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p>Hexo 是整个博客的核心部分，它是一个博客系统，基于 Node.js 环境。<br>Hexo 只需简单的几个命令即可完成博客的生成与部署。Hexo 本地将博客生成静态页面，然后再将其部署至 GitHub。</p>
+<h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。在整个搭建过程中起着为 Hexo 系统提供环境的作用。</p>
+<h2 id="Git-Github-和-Github-Pages"><a href="#Git-Github-和-Github-Pages" class="headerlink" title="Git ,Github 和 Github Pages"></a>Git ,Github 和 Github Pages</h2><p>首先，Git 是一款版本控制系统，Github 是只支持 Git 作为唯一的版本库格式进行托管的托管平台。我们在这里可以简单地理解为 Git 是为 Github 服务的。而 Github 的作用是当作我们网站的服务器，我们需要把我们的所有与博客有关的文件上传到我们个人的 Github 中，上传到的位置就是 Github Pages。<br>(如果您不了解 Git ,Github，可以去<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰的Git教程</a>和<a href="http://stormzhang.com/github/2016/05/25/learn-github-from-zero1/" target="_blank" rel="external">stormzhang的Github教程</a>了解相关知识）<br>好啦，接下来，就开始我们的搭建博客之旅吧</p>
+<h2 id="安装和配置"><a href="#安装和配置" class="headerlink" title="安装和配置"></a>安装和配置</h2><ol>
+<li><a href="https://nodejs.org/en/" target="_blank" rel="external">安装 Node.js </a></li>
+<li>在 Github 中创建仓库，名字为username.github.io,将 username换成你自己的 Github 账户名。（注意：必须是这个名字！！！）  <img src="http://bmvjku.img48.wal8.com/img48/17283572_20170910105405/150501209208.png" alt="github"></li>
+<li>安装Hexo<br>win+R 打开控制台，输入<blockquote>
+<p>npm install -g hexo </p>
+</blockquote>
+</li>
+<li><p>初始化<br>创建一个文件夹，在控制台中转到这个文件夹，输入：</p>
+<blockquote>
+<p>hexo init   </p>
+</blockquote>
+<p>  例如：<br>  <img src="http://bmvjku.img48.wal8.com/img48/17283572_20170910105405/150504006133.png" alt="hexo"><br>至此，全部安装工作已经完成</p>
+</li>
+<li>生成静态页面<br>还是在刚刚的目录下，输入：<blockquote>
+<p>hexo g  </p>
+</blockquote>
+</li>
+</ol>
+<p><img src="http://bmvjku.img48.wal8.com/img48/17283572_20170910105405/150504006176.png" alt=" "></p>
+<p> 启动本地服务，进行预览<br> 输入：</p>
+<blockquote>
+<p>hexo server  </p>
+</blockquote>
+<p><img src="http://bmvjku.img48.wal8.com/img48/17283572_20170910105405/15050403653.png" alt=" "><br> 在浏览器地址栏输入:</p>
+<blockquote>
+<p><a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>  </p>
+</blockquote>
+<p>  看到初始的博客<br><img src="http://bmvjku.img48.wal8.com/img48/17283572_20170910105405/s/150504006079_medium.png" alt=" "><br>记得退出调试模式时，按下Ctrl+C</p>
+<h2 id="与Github-设置关联"><a href="#与Github-设置关联" class="headerlink" title="与Github 设置关联"></a>与Github 设置关联</h2><ul>
+<li>打开控制台或Git Bash，输入如下命令：<blockquote>
+<p>git config –global user.name<br>git config –global user.email  </p>
+</blockquote>
+</li>
+</ul>
+<p>(user.name为你的github用户名，user.email为你的github绑定邮箱）  </p>
+<ul>
+<li>更改_congfig.yml文件<br>打开你最初创建的文件夹（即在终端中输入 hexo init命令时所在的位置），找到_config.yml，用记事本打开，下拉到最底端，找到deploy: ,<br>更改为：<br><img src="http://bmvjku.img48.wal8.com/img48/17283572_20170910105405/150504117959.png" alt=" ">  </li>
+</ul>
+<p><font color="#ff4500" size="6" face="黑体">  :后面一定要有空格 </font>  </p>
+<ul>
+<li><p>安装hexo-deployer-git –save</p>
+<blockquote>
+<p>npm install hexo-deployer-git –save  </p>
+</blockquote>
+</li>
+<li><p>将代码部署到github  </p>
+<blockquote>
+<p>hexo deploy </p>
+</blockquote>
+</li>
+</ul>
+<p>如果你在第6步中没有正确的写好_config.yml文件，此时将出现YAMLException  </p>
+<h2 id="上传文章"><a href="#上传文章" class="headerlink" title="上传文章"></a>上传文章</h2><ul>
+<li>新建文章  <blockquote>
+<p>hexo new  “article_name”  </p>
+</blockquote>
+</li>
+</ul>
+<p>此时，本地网站目录下的source/_posts文件夹下会出现你新建的文件 article_name.md,打开它并用MarkDown开始编辑，必须使用MarkDown格式才可以看到应有的效果，如果还不曾了解MarkDown，去搜索一下，开始你的MarkDown学习之旅，很简单的！  </p>
+<ul>
+<li>执行如下三条命令来进行文章的上传  <blockquote>
+<p>hexo clean     </p>
+</blockquote>
+</li>
+</ul>
+<p>清除现在的网页  </p>
+<blockquote>
+<p>hexo g  </p>
+</blockquote>
+<p>重新生成静态页面  </p>
+<blockquote>
+<p> hexo deploy  </p>
+</blockquote>
+<p>上传到github<br>以后写文章就是无限循环这几步  </p>
+<h2 id="博客主题"><a href="#博客主题" class="headerlink" title="博客主题"></a>博客主题</h2><p>如果你觉得当前的博客主题太过单一，想尝试一下其他的有趣的主题，可以去这个网站下载<a href="http://hexo.io/themes" title="http://hexo.io/themes" target="_blank" rel="external">http://hexo.io/themes</a>，每一个主题都有相应的ReadMe文件教你如何更换主题。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://github.com/clutchyu/">clutchyu.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+<script src="/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+
